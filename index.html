@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload File - CSI Report</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload File Excel</h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="file">Pilih File Excel:</label>
+            <input type="file" name="file" id="file" required>
+            <label for="name">Nama yang Dinilai (opsional):</label>
+            <input type="text" name="name" id="name" placeholder="Masukkan nama">
+            <button type="submit">Upload dan Hitung</button>
+        </form>
+    </div>
+</body>
+</html>
